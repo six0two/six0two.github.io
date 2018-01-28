@@ -12,24 +12,38 @@
 <form action="https://formspree.io/eyescreem.022@gmail.com" method="post">
     <fieldset>
         <legend>Informacje Personalne</legend>
-        <label>Imię<br><input type="text" name="imie"></label><br>
-        <label>Nazwisko<br><input type="text" name="nazwisko"></label><br>
-        <label>Email<br><input type="text" name="email"></label><br>
-        <label>Numer telefonu<br><input type="text" name="telefon"></label><br>
+        
+        <label>Imię<br><input type="text" name="imie" required></label><br>
+        <label>Nazwisko<br><input type="text" name="nazwisko" required></label><br>
+        <label>Email<br><input type="email" name="email" required></label><br>
+        <label>Numer telefonu<br><input type="text" name="telefon"
+         maxlength="9" placeholder="np. 555444333" pattern="[0-9]{9}"></label><br><br>
+        
         <label>Miasto<br>
             <select name="miasto">
-                  <option value="warszawa">Warszawa</option>
-                  <option value="krakow">Kraków</option>
-                  <option value="gdansk">Gdańsk</option>
-            </select>
+                  <option value="warszawa" name="warszawa">Warszawa</option>
+                  <option value="krakow" name="krakow">Kraków</option>
+                  <option value="gdansk" name="gdansk">Gdańsk</option>
+            </select><br>
         </label><br>
         
         <label>Płeć<br>
             <input type="radio" name="plec" value="mezczyzna">Mężczyzna<br>
             <input type="radio" name="plec" value="kobieta">Kobieta<br>
         </label>
-        <textarea maxlength="1000">Wiadomość</textarea><br>
+        
+        <br>
+        
+        <label>Czy wyrażasz zgodę na przetwarzanie swoich danych osobowych ?<br>
+        <input type="checkbox" name="zgoda" value="tak">TAK<br> 
+        </label>
+        
+        <br>
+        
+        <textarea name="wiadomosc" rows="10" cols="30" placeholder="Wiadomość"></textarea><br>
+        
         <input type="submit" value="Wyślij">
+        
     </fieldset>  
 </form>
   

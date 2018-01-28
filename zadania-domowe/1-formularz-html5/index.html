@@ -2,11 +2,38 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Formularz</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
    
-   <h1>Zadanie domowe 1</h1>
+
+<form action="https://formspree.io/eyescreem.022@gmail.com" method="post">
+    <fieldset>
+        <legend>Informacje Personalne</legend>
+        <label>Imię<br><input type="text" name="imie"></label><br>
+        <label>Nazwisko<br><input type="text" name="nazwisko"></label><br>
+        <label>Email<br><input type="text" name="email"></label><br>
+        <label>Numer telefonu<br><input type="text" name="telefon"></label><br>
+        <label>Miasto<br>
+            <select name="miasto">
+                  <option value="warszawa">Warszawa</option>
+                  <option value="krakow">Kraków</option>
+                  <option value="gdansk">Gdańsk</option>
+            </select>
+        </label><br>
+        
+        <label>Płeć<br>
+            <input type="radio" name="plec" value="mezczyzna">Mężczyzna<br>
+            <input type="radio" name="plec" value="kobieta">Kobieta<br>
+        </label>
+        <textarea maxlength="1000">Wiadomość</textarea><br>
+        <input type="submit" value="Wyślij">
+    </fieldset>  
+</form>
+  
+ 
     
 </body>
 </html>

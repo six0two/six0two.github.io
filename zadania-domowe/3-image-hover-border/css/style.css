@@ -1,5 +1,5 @@
-
-#border {
+/*MAIN*/
+.border {
     display: block;
     position: relative;
     margin-left: auto;
@@ -11,16 +11,53 @@
     height: 350px;
 }
 
-
-#border::before
+.border::before , .border::after
 {
     background-color: white;
     content: " ";
     position: absolute;
-    z-index: -1;
     left: -8px;
     right: -8px;
-    top: -8px;
-    bottom: -8px;
-    border: 3px solid black;
+    border: solid white;
+    z-index: -1;
 }
+
+/*MAIN*/
+
+/*TOP BORDER - START*/
+
+.border::before
+{  
+    top: -8px;
+    bottom: 361px;
+    border-width: 3px 3px 0px 3px;
+}
+
+.border:hover::before
+{
+    border: solid black;
+    border-width: 3px 3px 0px 3px;
+    bottom: 175px;
+    transition-duration: 2s;
+}
+
+/*TOP BORDER - END*/
+
+/*BOTTOM BORDER - START*/
+
+.border::after
+{
+    top: 358px;
+    bottom: -8px;
+    border-width: 0px 3px 3px 3px;
+}
+
+.border:hover::after
+{
+    top: 175px;
+    transition-duration: 2s;
+    border: solid black;
+    border-width: 0px 3px 3px 3px;
+}
+
+/*BOTTOM BORDER - END*/

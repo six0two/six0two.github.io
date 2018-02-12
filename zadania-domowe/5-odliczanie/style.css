@@ -1,0 +1,30 @@
+body
+{
+    height: 100vh;
+    background-color: black;
+    color: red;
+    font-size: 10em;
+    text-align: center;
+}
+
+
+#licznik
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+.odliczanie
+{
+    
+}
+
+
+/*#dziesiec , #dziewiec , #osiem , #siedem, #szesc , #piec , #cztery , #trzy , #dwa , #jeden , #final*/
+
+

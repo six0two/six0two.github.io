@@ -49,29 +49,31 @@ body
 
 /*    MASKA - START   */
 .item-mask {
-	background: #ff6f00;
     height: 100%;
     width: 100%;
     opacity: 0;
-    position: relative;   
+    position: relative;
+    color: white;
 }
 
 .item-mask:hover 
 {
-    opacity: 0.75;
+    opacity: 1;
     transition: all 0.3s ease-in;
+    background-color: rgba(255,111,0, 0.7);
 }
 
 
 .fa-cart-arrow-down
 {
     position: absolute;
-    color: #fff;
     font-size: 75px;
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
     
 }
+
 
 /*   MASKA - END   */
 
@@ -98,11 +100,22 @@ body
     }
 }
 
+@media (max-width: 620px)
+{
+        .product-list{
+        display: block;
+        min-width: 90%;
+        float: left;
+        margin-top: 15px;
+        
+    }
+}
+
 @media (max-width: 480px)
 {
         .product-list{
         display: block;
-        min-width: 100%;
+        min-width: 90%;
         float: left;
         margin-top: 15px;
         

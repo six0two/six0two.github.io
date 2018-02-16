@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="kalkulator">
+    
+        <form action="">
+            
+            <input type="text" id="ekran" disabled >
+            
+            <br><br>
+            
+            <input type="button" value="C" class="keys" onclick="addtoscreen('c')">
+            <input type="button" value="<-" class="keys" onclick="backspace()">
+            <input type="button" value="%" class="keys" onclick="addtoscreen('%')">
+            <input type="button" value="/" class="keys" onclick="addtoscreen('/')">
+            
+            <br><br>
+            
+            <input type="button" value="9" class="keys" onclick="addtoscreen('9')">
+            <input type="button" value="8" class="keys" onclick="addtoscreen('8')">
+            <input type="button" value="7" class="keys" onclick="addtoscreen('7')">
+            <input type="button" value="*" class="keys" onclick="addtoscreen('*')">
+            
+            <br><br>
+            
+            <input type="button" value="6" class="keys" onclick="addtoscreen('6')">
+            <input type="button" value="5" class="keys" onclick="addtoscreen('5')">
+            <input type="button" value="4" class="keys" onclick="addtoscreen('4')">
+            <input type="button" value="+" class="keys" onclick="addtoscreen('+')">
+            
+            <br><br>
+            
+            <input type="button" value="3" class="keys" onclick="addtoscreen('3')">
+            <input type="button" value="2" class="keys" onclick="addtoscreen('2')">
+            <input type="button" value="1" class="keys" onclick="addtoscreen('1')">
+            <input type="button" value="-" class="keys" onclick="addtoscreen('-')">
+            
+            <br><br>
+            
+            <input type="button" value="." class="keys" onclick="addtoscreen('.')">
+            <input type="button" value="0" class="keys" onclick="addtoscreen('0')">
+            <input type="button" value="="  class="rowna" id="wynik" onclick="answer()">
+            
+            
+            
+                     
+        </form>
+    
+    </div>
+ 
+    <script src="calc.js"></script> 
+</body>
+</html>

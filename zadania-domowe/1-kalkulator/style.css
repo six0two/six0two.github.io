@@ -1,0 +1,72 @@
+body
+{
+    background-color: black;
+    height: 100vh;
+}
+
+#kalkulator
+{
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid silver;
+    text-align: center;
+    box-shadow: 0px 0px 30px skyblue;
+}
+
+#ekran
+{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 250px;
+    height: 50px;
+    text-align: right;
+    font-size: 30px;
+    color: black;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 30px skyblue;
+}
+
+.keys
+{
+    width: 50px;
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 10px skyblue;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.keys:hover
+{
+    background-color: skyblue;
+    transition: 0.2s ease-in;
+    box-shadow: 0px 0px 20px deepskyblue;
+    font-weight: bold;
+    outline: 0;
+}
+
+.rowna
+{
+    width: 114px;
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.rowna:hover
+{
+    background-color: silver;
+    transition: 0.2s ease-in;
+    box-shadow: 0px 0px 20px silver;
+    font-weight: bold;
+}

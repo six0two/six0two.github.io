@@ -1,0 +1,105 @@
+body
+{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+#okno
+{
+    display: inline-block;
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.licznik
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    animation-name: odliczanie;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+#dziesiec
+{
+    animation-delay: 1s;
+}
+
+#dziewiec
+{
+    animation-delay: 2s;
+}
+
+#osiem
+{
+    animation-delay: 3s;
+}
+
+#siedem
+{
+    animation-delay: 4s;
+}
+
+#szesc
+{
+    animation-delay: 5s;
+}
+
+#piec
+{
+    animation-delay: 6s;
+}
+
+#cztery
+{
+    animation-delay: 7s;
+}
+
+#trzy
+{
+    animation-delay: 8s;
+}
+
+#dwa
+{
+    animation-delay: 9s;
+}
+
+#jeden
+{
+    animation-delay: 10s;
+}
+
+#text
+{
+    animation-delay: 11s;
+    animation-duration: 8s;
+}
+
+@keyframes odliczanie
+{
+    0%, 100%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+

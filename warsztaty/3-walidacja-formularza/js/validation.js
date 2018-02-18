@@ -11,6 +11,9 @@ var zgodyMarketingowe = document.querySelectorAll('input[type=checkbox]');
 var inputImie = document.getElementById("name");
 var inputEmail = document.getElementById("email");
 
+var wyslijBtn = document.getElementById("wiadomosc");
+
+
 
 // Funkcja zaznaczania wszystkich checkboxów
 
@@ -27,4 +30,33 @@ function checkboxState() {
 
 ostatniCheck.onchange = checkboxState;
 // funkcja zaznaczania wszystkich checkboxów
+
+// funkcja walidująca inputy
+
+function walidujFormularz(event) {
+    if (inputImie.value == "") {
+        var msgImie = document.createElement("li");
+        msgImie.innerHTML = "Wpisz imię";
+        wiadomosc.appendChild(msgImie);
+        event.preventDefault();
+    }
+    
+    if (inputEmail.value == "") {
+        var msgImie = document.createElement("li");
+        msgImie.innerHTML = "Wpisz email";
+        wiadomosc.appendChild(msgEmail);
+        event.preventDefault();
+}
+    
+    if (!zgodaMarketingowa1.checked) {
+        var msgZgoda = document.createElement("li");
+        msgImie.innerHTML = "Musisz wyrazić zgodę!";
+        wiadomosc.appendChild(msgZgoda);
+        event.preventDefault();
+}
+    
+}
+
+wyslijBtn.onclick = walidujFormularz;
+
 

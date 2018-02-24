@@ -1,0 +1,74 @@
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*3.	Elementowi z id #slider nadaj pozycję relatywną, overflow: hidden i wysokość 600px;*/
+#slider 
+{
+	position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+/*z klasą .slide-show nadaj pozycję absolutną i wysokość 100%*/
+#slider .slide-show 
+{
+	position: absolute;
+    height: 100%;
+}
+	
+/*z klasą .single-slide nadaj pozycję absolutną oraz wartości: top=0 i bottom=0*/
+#slider .slide-show .single-slide 
+{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+/*Elementom img nadaj wysokość i szerokość 100%, ponieważ obrazki są różnych rozdzielczości*/
+#slider .slide-show .single-slide img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/*.slide-caption – ustaw pozycję absolutną i wypozycjonuj w pionie: top 50%, transform: translateY(-50%), oraz w poziomie: left 0, right 0, margin 0 auto i text-align: center; 
+Dodatkowo nadaj elementom z-index: 5, aby były ponad obrazami. Dodatkowo możesz napisom ustawić kolor czcionki na biały i wielkość na 4em
+*/
+
+#slider .slide-show .single-slide .slide-caption 
+{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 5;
+    color: white;
+    font-size: 4em;
+}
+
+/*.slider-arrows button - wypozycjonuj na środku w pionie za pomocą pozycji absolutnej, top 50%, transform translateY(-50%)*/
+#slider .slider-arrows button
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#slider .slider-arrows .prev-slide 
+{
+    left: 0;
+}
+
+#slider .slider-arrows .next-slide 
+{
+    right: 0;
+}
+

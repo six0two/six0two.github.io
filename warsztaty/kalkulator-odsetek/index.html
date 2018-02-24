@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator odsetek</title>
+</head>
+<body>
+   
+    <div id="kalkulator">
+    
+        <form action=""> 
+        
+<!--a.	Input typu number, który będzie miał domyślną wartość 0 oraz minimalną wartość 100, nadaj id ‘wplata’ oraz nadaj mu etykietę „Wpłata” w PLN-->
+            <label for="wplata"><input type="number" id="wplata" value="0" min="100">
+            
+            Wpłata w PLN
+            
+            </label>
+            
+            <br><br>
+            
+            
+<!--b.	Pole typu select z trzema opcjami: Miesięcznie (value = 12), Kwartalnie (value = 4) i Rocznie (value = 1 i to jest wartość domyślna), najadaj id ‘okres-kapitalizacji’ oraz nadaj mu etykietę „Częstotliwość kapitalizacji”. -->
+            <label for="okres-kapitalizacji">
+            
+            <select for="okres-kapitalizacji" id="okres-kapitalizacji">
+            
+            <option value="1">Miesięcznie</option>
+            <option value="4" selected>Kwartalnie</option>
+            <option value="12">Rocznie</option>
+            
+            </select>
+            
+            Częstotliwość kapitalizacji
+            
+            </label>
+            
+            <br><br>
+            
+<!--c.	Input typu numer, który będzie miał domyślną wartość 1 oraz minimalną wartość 1, nadaj id ‘ilosc-lat’ oraz etykietę „Ilość lat”-->
+    
+           <label for="ilosc-lat"><input type="number" value="1" min="1" id="ilosc-lat">
+           
+           Ilość lat
+           
+           </label>
+           
+           <br><br>
+           
+<!--d.	Input typu numer, który będzie miał domyślną wartość 10 oraz minimalną wartość 0, nadaj id ‘oprocentowanie’ oraz nadaj etykietę „Stopa zwrotu w %:”-->
+           
+           <label for="oprocentowanie">
+              
+              <input type="number" value="10" min="0" id="oprocentowanie">
+               
+               Stopa zwrotu w %
+           </label>
+           
+           <br><br>
+           
+<!-- e.	Input typu checkbox, który będzie miał id ‘podatek’ oraz etykietę „Uwzględnij podatek Belki 19%”-->
+           
+           <label for="podatek">
+               
+               <input type="checkbox" id="podatek">
+               
+               Uwzględnij podatek Belki 19 %
+               
+           </label>
+           
+           <br><br>
+           
+<!--f.	Button z tekstem „Oblicz”, którego kliknięcie wywoła funkcję oblicz() poprzez atrybut onclick-->
+           
+            <button onclick="oblicz(event)">Oblicz</button>
+           
+<!--2.	Poza formularzem stwórz pusty znacznik p z id ‘wynik’, do którego przekażemy wynik obliczeń-->
+           
+           <p id="wynik"></p>
+            
+        </form>
+    
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>

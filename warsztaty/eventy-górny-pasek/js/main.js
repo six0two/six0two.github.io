@@ -8,10 +8,19 @@ window.addEventListener('scroll', function() {
 // zmienna navHeight = 
     var navHeight = document.getElementById('main-nav').offsetHeight;
     
+    var headerHeight = document.getElementById('main-header').offsetHeight;
+    
     if (y >= navHeight) {
         document.getElementById('main-nav').classList.add('transparent');
     } else {
         document.getElementById('main-nav').classList.remove('transparent');
+    }
+    
+    if(y >= headerHeight ) {
+        
+        var bgPos = -((y - headerHeight)/ 3);
+        
+        document.getElementById('background').style.backgroundPosition = bgPos + 'px' + ' 0';
     }
     
     

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax - warsztat 4 - bitcoin</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Aktualny kurs Bitcoin do PLN</h2>
+    
+    <h3>Kupno</h3>
+    
+    <span id="buy" class="exchange-value"></span><i class="fa fa-minus-square-o" id="buy-arrow"></i>
+    
+    <h3>Sprzedaż</h3>
+    
+    <span id="sell" class="exchange-value"></span><i class="fa fa-minus-square-o" id="sell-arrow"></i>
+    
+    <div class="control-buttons"></div>
+    
+    <h4>
+        <button>5 s</button>
+        <button>10 s</button>
+        <button>30 s</button>
+        <button>60 s</button>
+        
+    </h4>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/*   GENERAL STYLES*/
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #777;
+}
+
+header {
+    background-color: rgba(50,50,50, 0.5);
+    background-blend-mode: color;
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#main-nav .nav-item a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-nav .navbar-brand{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-nav.scroll {
+    background-color: rgba(14, 216, 214, 0.75);
+}
+
+#main-nav.scroll .nav-item a:hover {
+    color: #777;
+}
+
+
+
+
+
+
+
+
+/*
+Specify in CSS
+
+Use the following CSS rules to specify these families:
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+
+*/

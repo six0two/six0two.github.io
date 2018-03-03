@@ -1,0 +1,23 @@
+div.container-first {
+    background-color: red;
+    height: 500px;
+}
+
+div.container-second {
+    background-color: deepskyblue;
+    height: 100px;
+}
+
+.item {
+    height: auto;
+    background-color: #ccc;
+}
+
+.item:nth-child(even) {
+    background-color: red;
+    color: white;
+}
+
+nav {
+    background-color: yellow;
+}

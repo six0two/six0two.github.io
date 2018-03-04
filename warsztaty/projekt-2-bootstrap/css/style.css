@@ -1,0 +1,21 @@
+#main-header {
+	background-color: red;
+    height: 100vh;
+}
+
+.item {
+	background-color: green;
+}
+
+.item:nth-child(2) {
+    background-color: gray;
+}
+
+.item:nth-child(3) {
+    background-color: yellow;
+}
+
+#btn-large {
+	background-color: lime;
+    border-color: lime;
+}

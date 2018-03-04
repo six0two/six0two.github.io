@@ -17,6 +17,10 @@ body {
 }
 
 #main-nav.scroll {
+    background-color: rgb(14, 216, 214);
+}
+
+#main-nav.scroll transparent {
     background-color: rgba(14, 216, 214, 0.75);
 }
 
@@ -36,6 +40,7 @@ header#main-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #main-header-content {
@@ -55,6 +60,36 @@ header#main-header {
     background-color: #0ed8d6;
     border-color: #0ed8d6;
 }
+
+#main-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#main-section-header {
+    margin-bottom: 5rem;
+}
+
+.icon {
+    font-size: 100px;
+    border-radius: 50%;
+    border: 20px solid #0ed8d6;
+    background-color:#0ed8d6;
+    color: white;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+}
+
+#portfolio {
+    background-color: whitesmoke;
+}
+
+
 
 
 

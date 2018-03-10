@@ -1,0 +1,24 @@
+#main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+        
+        .list-item {
+	        display: inline-block;
+            line-height: 50px;
+            margin: 0 20px;
+        }
+        
+        
+    }
+    
+}
+

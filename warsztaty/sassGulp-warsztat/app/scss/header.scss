@@ -1,0 +1,82 @@
+@import 'zmienne';
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    
+
+    #header-top {
+        width: 90%;
+        margin: 0 auto;
+
+        #head-left {
+            display: inline-block;
+            width: 50%;
+            float: left;
+
+            p {
+                margin: 0;
+                color: #fff;
+                font-size: 40px;
+                line-height: 60px;
+
+                svg {
+                    color: $zolty;
+                }
+            }
+
+        }
+
+        #head-right {
+            display: inline-block;
+            width: 50%;
+            float: left;
+            text-align: right;
+            
+            .half-inner {
+                display: inline-block;
+                width: 30%;
+                font-size: 20px;
+                line-height: 30px;
+                
+                svg {
+                    float: left;
+                    height: 60px;
+                    font-size: 30px;
+                    transform: rotate(90deg);
+                }
+                
+                p {
+                    
+                    line-height: 30px;
+                    margin: 0;
+                    
+                    &:first-of-type {
+                        font-size: 20px;
+                    }
+                    
+                    &:last-of-type {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        #clear {
+            clear: both;
+        }
+    }
+
+}
+
+#form {
+	position: absolute;
+    right: 5%;
+    bottom: 10%;
+}

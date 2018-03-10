@@ -15,10 +15,24 @@
 	        display: inline-block;
             line-height: 50px;
             margin: 0 20px;
+            
+            &:nth-child(2) {
+                a {
+                    &:hover {
+                        color: greenyellow;
+                    }
+                }
+            }
+            
+            a {
+                text-decoration: none;
+                color: red;
+                
+                &:hover {
+                    color: blueviolet;
+                }
+            }
         }
-        
-        
     }
-    
 }
 
